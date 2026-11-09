@@ -1,0 +1,53 @@
+{
+  "name": "dsh-complete-chime",
+  "version": "1.0.0",
+  "description": "DSH plugin: plays a chime or a short melody when an agent turn really finishes (WebAudio, zero dependencies), with optional voice announcement and system notification.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "notification",
+    "chime",
+    "sound",
+    "alert"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "423324324",
+    "email": "423324324@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/423324324/dsh-complete-chime.git"
+  },
+  "homepage": "https://github.com/423324324/dsh-complete-chime#readme",
+  "bugs": {
+    "url": "https://github.com/423324324/dsh-complete-chime/issues"
+  },
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

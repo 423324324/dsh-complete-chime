@@ -1,0 +1,6 @@
+# dsh-complete-chime
+# 一轮任务/对话跑完时响铃或放一小段音乐。宿主侧只需要一个可挂载的入口，
+# 真正的功能（WebAudio 铃声 + 设置页）在这包的 Web 客户端里。
+- insert:
+    - id: complete-chime
+      name: 'dsh-complete-chime'
